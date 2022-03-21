@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import "../styles/globals.scss"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({Component, pageProps}) => {
+  return (
+    <>
+      <Component {...pageProps}/>
+      {/* <style jsx global>{`
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+      `}</style> */}
+    </>
+  )
 }
 
-export default MyApp
+export default MyApp;
